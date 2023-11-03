@@ -248,15 +248,15 @@ input:focus {
         background-image: url("../img/galery/pict1.jpg");
     }
     .pict2 {
-        background-image: url("../img/galery/pict2.jpg");
+        background-image: url("../img/galery/pict5.jpg");
     }
     .pict3 {
-        background-image: url("../img/galery/pict3.jpg");
-    }
-    .pict4 {
         background-image: url("../img/galery/pict4.jpg");
     }
+    .pict4 {
+        background-image: url("../img/galery/pict3.jpg");
+    }
     .pict5 {
-        background-image: url("../img/galery/pict5.jpg");
+        background-image: url("../img/galery/pict2.jpg");
     }
 }
