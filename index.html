@@ -7,50 +7,173 @@
 
         <!-- FONTS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css" />
 
         <!-- CSS -->
         <link rel="stylesheet" href="src/css/style.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
         <!-- JS SCRIPT -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
     </head>
     <body>
         <!-- <img src="src/img/hero-bg.jpg" alt="" class="hero-bg" /> -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="src/img/rindang-logo.svg" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <div class="input-group bg-white rounded-pill p-1">
-                            <input class="form-control rounded-start-pill border-0" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success rounded-circle border-0 p-0" type="submit"><img src="src/img/icons/search.svg" alt="" height="36px" /></button>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-padding navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="src/img/rindang-logo.svg" alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContentLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                    </form>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto ms-lg-auto mb-2 mb-lg-0 column-gap-lg-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tentang</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Galeri </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Rindang 1.0</a></li>
+                                        <li><a class="dropdown-item" href="#">Rindang 2.0</a></li>
+                                        <li><a class="dropdown-item" href="#">Rindang 3.0</a></li>
+                                        <!-- <li><hr class="dropdown-divider" /></li> -->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kontak</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <div class="input-group bg-white rounded-pill p-1">
+                                    <input class="form-control rounded-start-pill border-0" type="search" placeholder="Cari..." aria-label="Search" />
+                                    <button class="btn btn-outline-success rounded-circle border-0 p-0" type="submit"><img src="src/img/icons/search.svg" alt="" height="36px" /></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+
+            <section class="hero-section">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-8 col-sm-12 text-light h-100 hero-headline lh-sm">
+                            <p class="mb-0 fs-5">Selamat Datang di<br />Website Resmi</p>
+                            <h1 class="display-1 headline mb-4">RINDANG</h1>
+                            <p>
+                                "Konektivitas Menuju <br />
+                                Kemandirian Pangan Kota"
+                            </p>
+                            <a href="#" class="btn-1" role="button">Jelajahi</a>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 text-light h-100 hero-headline">
+                            <p>
+                                "Konektivitas Menuju <br />
+                                Kemandirian Pangan Kota
+                            </p>
+                            <a href="#" class="btn-1" role="button">Jelajahi</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card border-0 rindang-stat shadow">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-4 stat-card">
+                                            <div class="card">
+                                                <div class="card-body d-flex gap-3">
+                                                    <i class="fa fa-pepper-hot fs-1 bg-color-yellow p-3 rounded-2"></i>
+                                                    <div class="d-flex flex-column lh-sm justify-content-center">
+                                                        <p class="mb-0">Harga Pangan</p>
+                                                        <h2 class="fw-bold text-color-yellow"><sup>Rp</sup>80.000/kg</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-4 stat-card">
+                                            <div class="card">
+                                                <div class="card-body d-flex gap-3">
+                                                    <i class="fa fa-seedling fs-1 bg-color-red p-3 rounded-2"></i>
+                                                    <div class="d-flex flex-column lh-sm justify-content-center">
+                                                        <p class="mb-0">Kapasitas Produksi</p>
+                                                        <h2 class="fw-bold text-color-red">40kg/bulan</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-4 stat-card">
+                                            <div class="card">
+                                                <div class="card-body d-flex gap-3">
+                                                    <i class="fa fa-tractor fs-1 bg-color-green p-3 rounded-2 text-light"></i>
+                                                    <div class="d-flex flex-column lh-sm justify-content-center">
+                                                        <p class="mb-0">Estimasi Panen</p>
+                                                        <h2 class="fw-bold text-color-green">40kg/bulan</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="text-center mb-5">
+                                <h2 class="display-4 fw-bold text-color-navy mb-3">
+                                    Kelurahan Kelurahan <br />
+                                    yang <span class="text-color-red">Terlibat</span>
+                                </h2>
+                                <p class="text-body-secondary">
+                                    Terdapat 7 Kelurahan yang terlibat dalam program ketahan pangan <strong class="text-color-red">Rindang</strong><br />
+                                    diharapkan kedepan makin banyak lagi kelurahan yang terlibat di program rindang
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body">
+                                            <i class="fa fa-dolly fs-1"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4"></div>
+                                <div class="col-sm-12 col-lg-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+
         <script>
             feather.replace();
         </script>
@@ -70,6 +193,19 @@
                 navbar.classList.remove("navbar-dark");
                 input_group.classList.add("border");
             }
+        </script>
+        <script>
+            const body = document.querySelector("body");
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Set the opacity to 1
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            });
+
+            observer.observe(body);
         </script>
     </body>
 </html>

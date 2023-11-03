@@ -1,13 +1,53 @@
+:root {
+    --color-1: #fcb45e;
+    --color-2: #ff6b6b;
+    --color-3: #89c97b;
+    --color-4: #232a42;
+}
+
+@font-face {
+    font-family: "Hola";
+    src: url("../fonts/hola-delight.woff");
+}
+
 * {
-    font-family: "Plus Jakarta Sans";
+    font-family: "Plus Jakarta Display", sans-serif;
+}
+
+html {
+    height: 100%;
 }
 
 body {
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center -4rem;
     background-size: cover;
-    background-attachment: fixed;
+    opacity: 1; /* Sesuaikan dengan tingkat opacity yang Anda inginkan */
+    z-index: -1; /* Letakkan pseudo-element di bawah elemen-elemen lain di body */
+}
+
+header {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: transparent;
 }
 
 .hero-bg {
@@ -26,18 +66,99 @@ body {
     width: auto;
 }
 
+.headline {
+    font-family: "Hola";
+}
+
+.hero-section {
+    height: 100%;
+}
+
+.btn-1 {
+    background-color: var(--color-1) !important;
+    color: white;
+    padding: 0.5rem 1.4rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.bg-color-yellow {
+    background-color: var(--color-1);
+}
+
+.bg-color-red {
+    background-color: var(--color-2);
+}
+
+.bg-color-green {
+    background-color: var(--color-3);
+}
+
+.text-color-yellow {
+    color: var(--color-1);
+}
+
+.text-color-red {
+    color: var(--color-2);
+}
+
+.text-color-green {
+    color: var(--color-3);
+}
+
+.text-color-navy {
+    color: var(--color-4);
+}
+
+.village-card {
+    transition: all ease-in-out 0.1s;
+}
+
+.village-card:hover {
+    background-color: var(--color-3);
+    color: white;
+}
+
 /** ==================== Small Viewport ==================== */
-@media screen and (max-width: 768px) {
-    body {
-        background-size: contain;
+@media screen and (max-width: 767.9px) {
+    body::before {
+        background-position: -13rem center;
     }
 
     .hero-bg {
         height: 100%;
         width: auto;
     }
+
+    .hero-headline {
+        transform: translate(0, 8rem);
+    }
+
+    .headline {
+        font-size: 4rem !important;
+    }
+
+    .rindang-stat {
+        transform: translate(0, -3rem);
+    }
+
+    .stat-card {
+        margin-bottom: 1rem;
+    }
 }
 
-/** ==================== Small Viewport ==================== */
+/** ==================== Large Viewport ==================== */
+@media screen and (min-width: 768px) {
+    .navbar-padding {
+        padding: 1.5rem 0 !important;
+    }
 
-/** ==================== Small Viewport ==================== */
+    .hero-headline {
+        transform: translate(0, 10rem);
+    }
+
+    .rindang-stat {
+        transform: translate(0, -2rem);
+    }
+}
