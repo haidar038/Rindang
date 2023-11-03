@@ -47,8 +47,9 @@ main {
 }
 
 input:focus {
-    outline: none;
+    outline: none !important;
     border-color: transparent;
+    box-shadow: none !important;
 }
 
 .hero-bg {
@@ -77,12 +78,16 @@ input:focus {
 
 .btn-1 {
     background-color: var(--color-1);
-    color: white;
+    color: #333;
     padding: 0.5rem 1.8rem;
     text-decoration: none;
     border: none;
     border-radius: 0.5rem;
     transition: all ease-in-out 0.2s;
+}
+
+.hero-section .btn-1 {
+    margin-top: 1rem;
 }
 
 .btn-1:hover {
@@ -115,26 +120,6 @@ input:focus {
 
 .text-color-navy {
     color: var(--color-4);
-}
-
-.village-card {
-    transition: all ease-in-out 0.1s;
-}
-
-.village-card:hover {
-    background-color: var(--color-3);
-    color: white !important;
-}
-
-.village-card .village-icons,
-.village-card:hover .v-card-title {
-    transition: all ease-in-out 0.1s;
-    color: var(--color-3);
-}
-
-.village-card:hover .village-icons,
-.village-card:hover .v-card-title {
-    color: #fff;
 }
 
 /** ==================== Small Viewport ==================== */
@@ -180,6 +165,16 @@ input:focus {
         right: 2rem;
         bottom: 10rem;
     }
+
+    .village-card {
+        transition: all ease-in-out 0.1s;
+        background-color: var(--color-2) !important;
+        color: white !important;
+    }
+
+    .v-card-title {
+        color: white;
+    }
 }
 
 /** ==================== Large Viewport ==================== */
@@ -189,11 +184,11 @@ input:focus {
     }
 
     .hero-headline {
-        transform: translate(0, 10rem);
+        transform: translate(0, 6rem);
     }
 
     .rindang-stat {
-        transform: translate(0, -2rem);
+        transform: translate(0, 0);
     }
 
     .mobile-headline {
@@ -207,12 +202,61 @@ input:focus {
     }
 
     .tagline-1 {
-        left: 20rem;
-        bottom: 8rem;
+        right: 15rem;
+        top: 22rem;
     }
 
     .tagline-2 {
-        right: 20rem;
-        bottom: 10rem;
+        right: 8rem;
+        top: 16rem;
+    }
+
+    .village-card {
+        transition: all ease-in-out 0.1s;
+    }
+
+    .village-card:hover {
+        background-color: var(--color-3);
+        color: white !important;
+    }
+
+    .village-card .village-icons,
+    .village-card:hover .v-card-title {
+        transition: all ease-in-out 0.1s;
+        color: var(--color-3);
+    }
+
+    .village-card:hover .village-icons,
+    .village-card:hover .v-card-title {
+        color: #fff;
+    }
+
+    .pict1,
+    .pict2,
+    .pict3,
+    .pict4,
+    .pict5 {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1rem;
+    }
+
+    .pict1 {
+        background-image: url("../img/galery/pict1.jpg");
+    }
+    .pict2 {
+        background-image: url("../img/galery/pict2.jpg");
+    }
+    .pict3 {
+        background-image: url("../img/galery/pict3.jpg");
+    }
+    .pict4 {
+        background-image: url("../img/galery/pict4.jpg");
+    }
+    .pict5 {
+        background-image: url("../img/galery/pict5.jpg");
     }
 }
