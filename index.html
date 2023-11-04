@@ -1,147 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>RINDANG</title>
 
-        <!-- FONTS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RINDANG</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="src/css/style.css" />
-        <link rel="stylesheet" href="src/css/counter.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css" />
 
-        <!-- JS SCRIPT -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/counter.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
 
-    <body>
-        <!-- <img src="src/img/hero-bg.jpg" alt="" class="hero-bg" /> -->
-        <img src="src/img/tagline (1).png" alt="" class="tagline-1" />
-        <img src="src/img/tagline (2).png" alt="" class="tagline-2" />
+    <!-- JS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+</head>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-padding navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="src/img/rindang-logo.svg" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContentLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">Menu</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav me-auto ms-lg-auto mb-2 mb-lg-0 column-gap-lg-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Tentang</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Galeri </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Rindang 1.0</a></li>
-                                        <li><a class="dropdown-item" href="#">Rindang 2.0</a></li>
-                                        <li><a class="dropdown-item" href="#">Rindang 3.0</a></li>
-                                        <!-- <li><hr class="dropdown-divider" /></li> -->
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Kontak</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex" role="search">
-                                <div class="input-group bg-white rounded-pill p-1">
-                                    <input class="form-control rounded-start-pill border-0" type="search" placeholder="Cari..." aria-label="Search" />
-                                    <button class="btn btn-outline-success rounded-circle border-0 p-0" type="submit">
-                                        <img src="src/img/icons/search.svg" alt="" height="36px" />
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+<body>
+    <!-- <img src="src/img/hero-bg.jpg" alt="" class="hero-bg" /> -->
+    <img src="src/img/tagline (1).png" alt="" class="tagline-1" />
+    <img src="src/img/tagline (2).png" alt="" class="tagline-2" />
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-padding navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="src/img/rindang-logo.svg" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent"
+                    aria-labelledby="navbarSupportedContentLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarSupportedContentLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                </div>
-            </nav>
-
-            <section class="hero-section">
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-lg-8 col-sm-12 text-light h-100 hero-headline lh-sm">
-                            <p class="mb-0 fs-5">Selamat Datang di<br />Website Resmi</p>
-                            <h1 class="display-1 headline mb-4">RINDANG</h1>
-                            <div class="">
-                                <p class="mb-4">
-                                    "Konektivitas Menuju <br />
-                                    Kemandirian Pangan Kota"
-                                </p>
-                                <a href="#" class="btn-1 fw-bold" role="button">Jelajahi</a>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto ms-lg-auto mb-2 mb-lg-0 column-gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tentang</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"> Galeri </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Rindang 1.0</a></li>
+                                    <li><a class="dropdown-item" href="#">Rindang 2.0</a></li>
+                                    <li><a class="dropdown-item" href="#">Rindang 3.0</a></li>
+                                    <!-- <li><hr class="dropdown-divider" /></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontak</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <div class="input-group bg-white rounded-pill p-1">
+                                <input class="form-control rounded-start-pill border-0" type="search"
+                                    placeholder="Cari..." aria-label="Search" />
+                                <button class="btn btn-outline-success rounded-circle border-0 p-0" type="submit">
+                                    <img src="src/img/icons/search.svg" alt="" height="36px" />
+                                </button>
                             </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-lg-8 col-sm-12 text-light h-100 hero-headline lh-sm">
+                        <p class="mb-0 fs-5">Selamat Datang di<br />Website Resmi</p>
+                        <h1 class="display-1 headline mb-4">RINDANG</h1>
+                        <div class="">
+                            <p class="mb-4">
+                                "Konektivitas Menuju <br />
+                                Kemandirian Pangan Kota"
+                            </p>
+                            <a href="#" class="btn-1 fw-bold" role="button">Jelajahi</a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </header>
-        <main>
-            <!-- Informasi Kelurahan -->
-            <section id="village" class="mb-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 mb-5">
-                            <div class="card border-0 rindang-stat rounded-5 shadow">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-lg-4 stat-card">
-                                            <div class="card rounded-4">
-                                                <div class="card-body d-flex gap-3">
-                                                    <i class="fa fa-pepper-hot fs-1 bg-color-yellow p-3 rounded-2"></i>
-                                                    <div class="d-flex flex-column lh-sm justify-content-center">
-                                                        <p class="mb-0">Harga Pangan</p>
-                                                        <h2 class="fw-bold text-color-yellow"><sup>Rp</sup><span class="value" akhi="80000"></span>/kg</h2>
-                                                    </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- Informasi Kelurahan -->
+        <section id="village" class="mb-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <div class="card border-0 rindang-stat rounded-5 shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4 stat-card">
+                                        <div class="card rounded-4">
+                                            <div class="card-body d-flex gap-3">
+                                                <i class="fa fa-pepper-hot fs-1 bg-color-yellow p-3 rounded-2"></i>
+                                                <div class="d-flex flex-column lh-sm justify-content-center">
+                                                    <p class="mb-0">Harga Pangan</p>
+                                                    <h2 class="fw-bold text-color-yellow"><sup>Rp</sup><span
+                                                            class="value" akhi="80000"></span>/kg</h2>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-lg-4 stat-card">
-                                            <div class="card rounded-4">
-                                                <div class="card-body d-flex gap-3">
-                                                    <i class="fa fa-seedling fs-1 bg-color-red p-3 rounded-2"></i>
-                                                    <div class="d-flex flex-column lh-sm justify-content-center">
-                                                        <p class="mb-0">Kapasitas Produksi</p>
-                                                        <h2 class="fw-bold text-color-red"><span class="value" akhi="40"></span>kg/bulan</h2>
-                                                    </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4 stat-card">
+                                        <div class="card rounded-4">
+                                            <div class="card-body d-flex gap-3">
+                                                <i class="fa fa-seedling fs-1 bg-color-red p-3 rounded-2"></i>
+                                                <div class="d-flex flex-column lh-sm justify-content-center">
+                                                    <p class="mb-0">Kapasitas Produksi</p>
+                                                    <h2 class="fw-bold text-color-red"><span class="value"
+                                                            akhi="40"></span>kg/bulan</h2>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-lg-4 stat-card">
-                                            <div class="card rounded-4">
-                                                <div class="card-body d-flex gap-3">
-                                                    <i class="fa fa-tractor fs-1 bg-color-green p-3 rounded-2 text-light"></i>
-                                                    <div class="d-flex flex-column lh-sm justify-content-center">
-                                                        <p class="mb-0">Estimasi Panen</p>
-                                                        <h2 class="fw-bold text-color-green"><span class="value" akhi="60"></span>kg/bulan</h2>
-                                                    </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4 stat-card">
+                                        <div class="card rounded-4">
+                                            <div class="card-body d-flex gap-3">
+                                                <i
+                                                    class="fa fa-tractor fs-1 bg-color-green p-3 rounded-2 text-light"></i>
+                                                <div class="d-flex flex-column lh-sm justify-content-center">
+                                                    <p class="mb-0">Estimasi Panen</p>
+                                                    <h2 class="fw-bold text-color-green"><span class="value"
+                                                            akhi="60"></span>kg/bulan</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -149,307 +155,354 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-12">
-                            <div class="text-center mb-4">
-                                <h2 class="display-4 fw-bold text-color-navy mb-3">
-                                    Kelurahan Kelurahan <br />
-                                    yang <span class="text-color-red">Terlibat</span>
-                                </h2>
-                                <p class="text-body-secondary">
-                                    Terdapat 7 Kelurahan yang terlibat dalam program ketahan pangan <strong class="text-color-red">Rindang</strong><br />
-                                    diharapkan kedepan makin banyak lagi kelurahan yang terlibat di program rindang
-                                </p>
+                    <div class="col-12">
+                        <div class="text-center mb-4">
+                            <h2 class="display-4 fw-bold text-color-navy mb-3">
+                                Kelurahan Kelurahan <br />
+                                yang <span class="text-color-red">Terlibat</span>
+                            </h2>
+                            <p class="text-body-secondary">
+                                Terdapat 7 Kelurahan yang terlibat dalam program ketahan pangan <strong
+                                    class="text-color-red">Rindang</strong><br />
+                                diharapkan kedepan makin banyak lagi kelurahan yang terlibat di program rindang
+                            </p>
+                        </div>
+                        <!-- Carousel -->
+                        <div id="carouselExample" class="carousel slide d-md-none shadow">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                    aria-label="Slide 3"></button>
                             </div>
-                            <!-- Carousel -->
-                            <div id="carouselExample" class="carousel slide d-md-none shadow">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="col-12">
+                                        <!-- Isi Carousel Slide 1 -->
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-dolly fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-seedling fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Sasa</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-user-tie fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-leaf fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Tubo</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-cloud-sun fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card village-card border-0 shadow">
+                                            <div class="card-body card-elements">
+                                                <i class="fa fa-fan fs-1 mb-3 village-icons"></i>
+                                                <p class="text-color-navy fw-bold fs-3 v-card-title">Santiong & Fitu</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut
+                                                    nobis ullam quia laborum dolore!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tambahkan carousel-item sesuai kebutuhan -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" ariahidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- Non Carousel -->
+                        <div class="row d-none d-md-flex">
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <div class="d-flex justify-content-between mb-3 align-items-center">
+                                            <i class="fa fa-dolly fs-1 village-icons"></i>
+                                            <div class="dropdown">
+                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#kalumpang">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <div class="d-flex justify-content-between mb-3 align-items-center">
+                                            <i class="fa fa-seedling fs-1 village-icons"></i>
+                                            <div class="dropdown">
+                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#sasa">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Sasa</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <div class="d-flex justify-content-between mb-3 align-items-center">
+                                            <i class="fa fa-user-tie fs-1 village-icons"></i>
+                                            <div class="dropdown">
+                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#foramadiahi">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <div class="d-flex justify-content-between mb-3 align-items-center">
+                                            <i class="fa fa-leaf fs-1 village-icons"></i>
+                                            <div class="dropdown">
+                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#tubo">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Tubo</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <div class="d-flex justify-content-between mb-3 align-items-center">
+                                            <i class="fa fa-cloud-sun fs-1 village-icons"></i>
+                                            <div class="dropdown">
+                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#kulaba">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-3">
+                                <div class="card village-card border-0 shadow">
+                                    <div class="card-body card-elements">
+                                        <i class="fa fa-fan fs-1 mb-3 village-icons"></i>
+                                        <p class="text-color-navy fw-bold fs-3 v-card-title">Santiong & Fitu</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
+                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galery -->
+        <section id="galery" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="text-center mb-4">
+                            <h2 class="display-4 fw-bold text-color-navy mb-3">Galeri <span
+                                    class="text-color-red">Rindang</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+                                Vitae facere ab dignissimos vel repudiandae voluptas laborum aspernatur harum labore
+                                repellat.
+                            </p>
+                        </div>
+                        <div class="row d-md-none d-flex justify-content-center">
+                            <!-- Mobile -->
+                            <div class="col-6 mb-3 d-flex justify-content-center"><img class="img-fluid rounded-3"
+                                    src="src/img/galery/pict1.jpg" alt="" /></div>
+                            <div class="col-6 mb-3 d-flex justify-content-center"><img class="img-fluid rounded-3"
+                                    src="src/img/galery/pict3.jpg" alt="" /></div>
+                            <div class="col-6 mb-3 d-flex justify-content-center"><img class="img-fluid rounded-3"
+                                    src="src/img/galery/pict4.jpg" alt="" /></div>
+                            <div class="col-6 mb-3 d-flex justify-content-center"><img class="img-fluid rounded-3"
+                                    src="src/img/galery/pict5.jpg" alt="" /></div>
+                            <div class="col-6 mb-3 d-flex justify-content-center"><img class="img-fluid rounded-3"
+                                    src="src/img/galery/pict2.jpg" alt="" /></div>
+                        </div>
+
+                        <div class="row galery" style="width: 100%">
+                            <!-- Desktop -->
+                            <div class="col-4 mb-3 d-none d-lg-flex">
+                                <div class="row w-100">
+                                    <div class="col-12">
+                                        <div class="pict1"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 mb-3 d-none d-lg-flex justify-content-center">
+                                <div class="row w-100">
+                                    <div class="col-6">
+                                        <div class="pict2"></div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pict3"></div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <div class="pict4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3 d-none d-lg-flex justify-content-center">
+                                <div class="row w-100">
+                                    <div class="col-12">
+                                        <div class="pict5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimony -->
+        <section id="testimony" class="mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="text-center mb-3">
+                            <h2 class="display-4 fw-bold text-color-navy mb-3">Kata <span
+                                    class="text-color-red">Mereka</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+                                Vitae facere ab dignissimos vel repudiandae voluptas laborum aspernatur harum labore
+                                repellat.
+                            </p>
+                        </div>
+                        <div class="row d-md-none">
+                            <!-- Mobile -->
+                            <div id="testiCarouselExample" class="carousel slide d-md-none shadow">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#testiCarouselCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#testiCarouselCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#testiCarouselCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#testiCarouselCaptions" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="col-12">
                                             <!-- Isi Carousel Slide 1 -->
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-dolly fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col-12">
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-seedling fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Sasa</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col-12">
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-user-tie fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col-12">
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-leaf fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Tubo</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col-12">
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-cloud-sun fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col-12">
-                                            <div class="card village-card border-0 shadow">
-                                                <div class="card-body card-elements">
-                                                    <i class="fa fa-fan fs-1 mb-3 village-icons"></i>
-                                                    <p class="text-color-navy fw-bold fs-3 v-card-title">Santiong & Fitu</p>
-                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Tambahkan carousel-item sesuai kebutuhan -->
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" ariahidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                            <!-- Non Carousel -->
-                            <div class="row d-none d-md-flex">
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <div class="d-flex justify-content-between mb-3 align-items-center">
-                                                <i class="fa fa-dolly fs-1 village-icons"></i>
-                                                <div class="dropdown">
-                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                    <ul class="dropdown-menu dropdown-menu-end">
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#kalumpang">Detail</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <div class="d-flex justify-content-between mb-3 align-items-center">
-                                                <i class="fa fa-seedling fs-1 village-icons"></i>
-                                                <div class="dropdown">
-                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                    <ul class="dropdown-menu dropdown-menu-end">
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#kalumpang">Detail</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Sasa</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <i class="fa fa-user-tie fs-1 mb-3 village-icons"></i>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <i class="fa fa-leaf fs-1 mb-3 village-icons"></i>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Tubo</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <i class="fa fa-cloud-sun fs-1 mb-3 village-icons"></i>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-4 mb-3">
-                                    <div class="card village-card border-0 shadow">
-                                        <div class="card-body card-elements">
-                                            <i class="fa fa-fan fs-1 mb-3 village-icons"></i>
-                                            <p class="text-color-navy fw-bold fs-3 v-card-title">Santiong & Fitu</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Galery -->
-            <section id="galery" class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-column align-items-center">
-                            <div class="text-center mb-5">
-                                <h2 class="display-4 fw-bold text-color-navy mb-3">Galeri</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                                    Vitae facere ab dignissimos vel repudiandae voluptas laborum aspernatur harum labore repellat.
-                                </p>
-                            </div>
-                            <div class="row d-md-none">
-                                <!-- Mobile -->
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row" style="height: 500px; width: 100%">
-                                <!-- Desktop -->
-                                <div class="col-4 mb-3 d-none d-md-flex">
-                                    <div class="row w-100">
-                                        <div class="col-12">
-                                            <div class="pict1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-4 mb-3 d-none d-md-flex justify-content-center">
-                                    <div class="row w-100">
-                                        <div class="col-6">
-                                            <div class="pict2"></div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="pict3"></div>
-                                        </div>
-                                        <div class="col-12 mt-4">
-                                            <div class="pict4"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-none d-md-flex justify-content-center">
-                                    <div class="row w-100">
-                                        <div class="col-12">
-                                            <div class="pict5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Testimony -->
-            <section id="testimony" class="mt-5 pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-column align-items-center">
-                            <div class="text-center mb-3">
-                                <h2 class="display-4 fw-bold text-color-navy mb-3">Kata Mereka</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                                    Vitae facere ab dignissimos vel repudiandae voluptas laborum aspernatur harum labore repellat.
-                                </p>
-                            </div>
-                            <div class="row d-md-none">
-                                <!-- Mobile -->
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row d-none d-md-flex">
-                                <!-- Desktop -->
-                                <div class="col-6 mb-3">
-                                    <div class="row">
-                                        <div class="col-12">
                                             <div class="card rounded-4 border-0 shadow user-testi">
-                                                <div class="card-body d-flex">
-                                                    <div class="col-2 d-flex align-items-center user-pict me-3">
-                                                        <img src="src/img/user/person1.png" alt="Person" class="rounded-circle ratio ratio-1x1 border" />
+                                                <div class="card-body d-flex pb-5">
+                                                    <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                        <img src="src/img/user/person1.png" alt="Person"
+                                                            class="rounded-circle ratio ratio-1x1 border" />
                                                     </div>
                                                     <div class="col-10">
-                                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam cupiditate unde fugiat autem quasi consectetur debitis, commodi vitae quo!"</p>
+                                                        <p>
+                                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quibusdam totam cupiditate unde fugiat autem quasi
+                                                            consectetur debitis,
+                                                            commodi vitae quo!"
+                                                        </p>
                                                         <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
                                                         <small class="mt-0">Regional Mobility</small>
                                                     </div>
@@ -457,17 +510,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <div class="row">
+                                    <div class="carousel-item">
                                         <div class="col-12">
                                             <div class="card rounded-4 border-0 shadow user-testi">
-                                                <div class="card-body d-flex">
-                                                    <div class="col-2 d-flex align-items-center user-pict me-3">
-                                                        <img src="src/img/user/person2.png" alt="Person" class="rounded-circle ratio ratio-1x1 border" />
+                                                <div class="card-body d-flex pb-5">
+                                                    <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                        <img src="src/img/user/person2.png" alt="Person"
+                                                            class="rounded-circle ratio ratio-1x1 border" />
                                                     </div>
                                                     <div class="col-10">
-                                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam cupiditate unde fugiat autem quasi consectetur debitis, commodi vitae quo!"</p>
+                                                        <p>
+                                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quibusdam totam cupiditate unde fugiat autem quasi
+                                                            consectetur debitis,
+                                                            commodi vitae quo!"
+                                                        </p>
                                                         <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
                                                         <small class="mt-0">Human Accounts Supervisor</small>
                                                     </div>
@@ -475,17 +532,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <div class="row">
+                                    <div class="carousel-item">
                                         <div class="col-12">
                                             <div class="card rounded-4 border-0 shadow user-testi">
-                                                <div class="card-body d-flex">
-                                                    <div class="col-2 d-flex align-items-center user-pict me-3">
-                                                        <img src="src/img/user/person3.png" alt="Person" class="rounded-circle ratio ratio-1x1 border" />
+                                                <div class="card-body d-flex pb-5">
+                                                    <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                        <img src="src/img/user/person3.png" alt="Person"
+                                                            class="rounded-circle ratio ratio-1x1 border" />
                                                     </div>
                                                     <div class="col-10">
-                                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam cupiditate unde fugiat autem quasi consectetur debitis, commodi vitae quo!"</p>
+                                                        <p>
+                                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quibusdam totam cupiditate unde fugiat autem quasi
+                                                            consectetur debitis,
+                                                            commodi vitae quo!"
+                                                        </p>
                                                         <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
                                                         <small class="mt-0">Distric Directives Producer</small>
                                                     </div>
@@ -493,17 +554,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <div class="row">
+                                    <div class="carousel-item">
                                         <div class="col-12">
                                             <div class="card rounded-4 border-0 shadow user-testi">
-                                                <div class="card-body d-flex">
-                                                    <div class="col-2 d-flex align-items-center user-pict me-3">
-                                                        <img src="src/img/user/person4.png" alt="Person" class="rounded-circle ratio ratio-1x1 border" />
+                                                <div class="card-body d-flex pb-5">
+                                                    <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                        <img src="src/img/user/person4.png" alt="Person"
+                                                            class="rounded-circle ratio ratio-1x1 border" />
                                                     </div>
                                                     <div class="col-10">
-                                                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam cupiditate unde fugiat autem quasi consectetur debitis, commodi vitae quo!"</p>
+                                                        <p>
+                                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quibusdam totam cupiditate unde fugiat autem quasi
+                                                            consectetur debitis,
+                                                            commodi vitae quo!"
+                                                        </p>
                                                         <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
                                                         <small class="mt-0">Forward Paradigm Manager</small>
                                                     </div>
@@ -511,153 +576,113 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Tambahkan carousel-item sesuai kebutuhan -->
                                 </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#testiCarouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#testiCarouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Kolaborasi -->
-            <section id="collabs" class="mt-5 pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-column align-items-center">
-                            <div class="text-center mb-3">
-                                <h2 class="display-4 fw-bold text-color-navy mb-4">Bekerja Sama <span class="text-color-red">Dengan</span></h2>
-                                <p>
-                                    Rindang bekerjasama dengan berbagai pihak dari lembaga hingga <br />
-                                    instansi pemerintah untuk kelancaran program Rindang kedepan
-                                </p>
-                            </div>
-                            <div class="row d-md-none">
-                                <!-- Mobile -->
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row d-none d-md-flex">
-                                <!-- Desktop -->
-                                <div class="col-12 mb-3 logos d-flex justify-content-evenly gap-5">
-                                    <img class="img-fluid" src="src/img/logo/BI_Logo.png" alt="" />
-                                    <img class="img-fluid" src="src/img/logo/Logo Ternate (1).png" alt="" />
-                                    <img class="img-fluid" src="src/img/logo/Universitas-Khairun-Logo.png" alt="" />
-                                    <img class="img-fluid" src="src/img/logo/RRI_Logo_2023.svg" alt="" />
-                                    <img class="img-fluid" src="src/img/logo/TCS 1.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FAQ -->
-            <section id="collabs" class="mt-5 py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-column">
-                            <div class="text-center mb-3">
-                                <h2 class="display-4 fw-bold text-color-navy mb-4">Pertanyaan Yang Sering <span class="text-color-red">Ditanyakan</span></h2>
-                                <p>
-                                    Anda dapat menemukan jawaban lengkap untuk pertanyaan-pertanyaan umum yang sering diajukan oleh pengguna. Ini adalah sumber informasi yang berguna untuk memahami topik atau layanan tertentu dengan lebih
-                                    baik, mengatasi keraguan umum, dan memperoleh wawasan lebih lanjut. Jika Anda memiliki pertanyaan, kemungkinan besar Anda akan menemukan jawabannya di sini
-                                </p>
-                            </div>
-                            <div class="row d-md-none">
-                                <!-- Mobile -->
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row d-none d-md-flex">
-                                <!-- Desktop -->
-                                <div class="col-12 mb-3">
-                                    <div class="accordion" id="accordionFlushExample">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    <p class="mb-0">Apa itu <strong> RINDANG</strong>?</p>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    RINDANG "Rica Tanam Dalam Kampong" merupakan program pemberdayaan masyarakat yang berfokus pada produksi cabai, yang merupakan komoditas penting dalam memenuhi kebutuhan pangan di kota
-                                                    Ternate. Program ini bertujuan untuk meningkatkan produktivitas dan kualitas produksi cabai di wilayah desa atau kelurahan-kelurahan yang ada di Kota Ternate.
+                        <div class="row d-none d-md-flex">
+                            <!-- Desktop -->
+                            <div class="col-6 mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card rounded-4 border-0 shadow user-testi">
+                                            <div class="card-body d-flex pb-5">
+                                                <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                    <img src="src/img/user/person1.png" alt="Person"
+                                                        class="rounded-circle ratio ratio-1x1 border" />
+                                                </div>
+                                                <div class="col-10">
+                                                    <p>
+                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Quibusdam totam cupiditate unde fugiat autem quasi consectetur
+                                                        debitis, commodi
+                                                        vitae quo!"
+                                                    </p>
+                                                    <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
+                                                    <small class="mt-0">Regional Mobility</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                    Bagaimana Saya Dapat Bergabung dengan Program RINDANG?
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    Anda dapat bergabung dengan Program RINDANG dengan menghubungi tim kami melalui kontak yang telah disediakan di situs web kami. Kami selalu membuka peluang bagi warga setempat dan pihak
-                                                    yang tertarik untuk berpartisipasi dalam program ini, baik sebagai petani cabai, relawan, atau mitra.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card rounded-4 border-0 shadow user-testi">
+                                            <div class="card-body d-flex">
+                                                <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                    <img src="src/img/user/person2.png" alt="Person"
+                                                        class="rounded-circle ratio ratio-1x1 border" />
+                                                </div>
+                                                <div class="col-10">
+                                                    <p>
+                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Quibusdam totam cupiditate unde fugiat autem quasi consectetur
+                                                        debitis, commodi
+                                                        vitae quo!"
+                                                    </p>
+                                                    <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
+                                                    <small class="mt-0">Human Accounts Supervisor</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                    Apa Manfaat yang Diperoleh Masyarakat dari Program Ini?
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    Program RINDANG memberikan sejumlah manfaat kepada masyarakat kami. Ini termasuk meningkatkan pendapatan para petani cabai, menciptakan lapangan kerja lokal, meningkatkan akses ke cabai
-                                                    berkualitas, serta berkontribusi pada pemenuhan kebutuhan pangan di wilayah kota kami. Program ini juga mendukung keberlanjutan lingkungan dan pertumbuhan ekonomi lokal.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card rounded-4 border-0 shadow user-testi">
+                                            <div class="card-body d-flex">
+                                                <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                    <img src="src/img/user/person3.png" alt="Person"
+                                                        class="rounded-circle ratio ratio-1x1 border" />
+                                                </div>
+                                                <div class="col-10">
+                                                    <p>
+                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Quibusdam totam cupiditate unde fugiat autem quasi consectetur
+                                                        debitis, commodi
+                                                        vitae quo!"
+                                                    </p>
+                                                    <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
+                                                    <small class="mt-0">Distric Directives Producer</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                                    Apakah Ada Pelatihan atau Dukungan yang Tersedia untuk Para Petani Cabai?
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    Ya, Program RINDANG menyediakan pelatihan dan dukungan teknis kepada para petani cabai yang berpartisipasi. Kami memiliki tim ahli yang akan memberikan panduan dalam penanaman, perawatan,
-                                                    dan manajemen cabai. Kami juga memberikan bantuan dalam memasarkan produk-produk cabai mereka.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card rounded-4 border-0 shadow user-testi">
+                                            <div class="card-body d-flex">
+                                                <div class="col-2 d-flex align-items-start user-pict me-3">
+                                                    <img src="src/img/user/person4.png" alt="Person"
+                                                        class="rounded-circle ratio ratio-1x1 border" />
+                                                </div>
+                                                <div class="col-10">
+                                                    <p>
+                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Quibusdam totam cupiditate unde fugiat autem quasi consectetur
+                                                        debitis, commodi
+                                                        vitae quo!"
+                                                    </p>
+                                                    <p class="fs-4 fw-bold mb-0 lh-sm">Eko Susiloanto</p>
+                                                    <small class="mt-0">Forward Paradigm Manager</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -665,234 +690,155 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FAQ -->
-            <section id="collabs" class="mt-5 py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex flex-column">
-                            <div class="text-center mb-3">
-                                <h2 class="display-4 fw-bold text-color-navy mb-4">Hubungi <span class="text-color-red">Kami</span></h2>
-
-                                <p>Kami siap menjawab pertanyaan Anda, menerima umpan balik, atau membantu Anda dengan segala kebutuhan yang Anda miliki terkait dengan layanan atau produk kami.</p>
-                                <p>
-                                    Hubungi kami melalui formulir kontak yang telah kami sediakan atau melalui alamat email dan nomor telepon yang tercantum di bagian ini. Tim kami akan dengan senang hati memberikan bantuan dan informasi
-                                    yang Anda butuhkan. Kami menghargai setiap pertanyaan dan masukan yang Anda sampaikan, dan kami berusaha untuk memberikan respon yang cepat dan informatif.
-                                </p>
-                            </div>
-                            <div class="row d-md-none">
-                                <!-- Mobile -->
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-6"></div>
-                                        <div class="col-12"></div>
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                                <div class="col-4 mb-3 d-md-none">
-                                    <div class="row">
-                                        <div class="col-12"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row d-none d-md-flex fw-bold">
-                                <!-- Desktop -->
-                                <div class="col-md-12 col-sm-12 text-center">
-                                    <span><i class="fa fa-map-marker-alt me-3"></i>Creative Space X, Benteng Oranje, Ternate Tengah</span>
-                                </div>
-                                <div class="col-md-12 col-sm-12 text-center">
-                                    <span><i class="fa fa-envelope me-3"></i>ternatecreativespace@gmail.com</span>
-                                </div>
-                                <div class="col-md-12 col-sm-12 text-center">
-                                    <span><i class="fa fa-phone me-3"></i>+62 812-4403-6006</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="text-center text-body-secondary pb-4 small">Copyright © <span class="fw-bold">By Rindang 2023</span> - All Rights Reserved</footer>
-
-        <!-- Modals -->
-
-        <!-- todo================ Kalumpang -->
-        <div class="modal fade" id="kalumpang" tabindex="-1" aria-labelledby="kalumpangLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="kalumpangLabel">Detail Kelurahan</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <div id="map" class="rounded-4 mb-4"></div>
-                                <div id="menu">
-                                    <div class="fw-bold">Mode</div>
-                                    <hr class="mt-0" />
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="satellite" id="satellite-streets-v12" checked />
-                                                <label class="form-check-label" for="satellite-streets-v12"> Satellite View </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="light" id="light-v11" />
-                                                <label class="form-check-label" for="light-v11"> Light </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="dark" id="dark-v11" />
-                                                <label class="form-check-label" for="dark-v11"> Dark </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="streets" id="streets-v12" />
-                                                <label class="form-check-label" for="streets-v12"> Street </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="outdoors" id="outdoors-v12" />
-                                                <label class="form-check-label" for="outdoors-v12"> Outdoor </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h3 class="text-color-navy fw-bold mb-4">Kalumpang</h3>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Informasi Tahap 1.0</button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Informasi Tahap 2.0</button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Informasi Tahap 3.0</button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- todo================ Kalumpang -->
-        <div class="modal fade" id="sasa" tabindex="-1" aria-labelledby="sasaLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="sasaLabel">Detail Kelurahan</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <div id="map" class="rounded-4 mb-4"></div>
-                                <div id="menu">
-                                    <div class="fw-bold">Mode</div>
-                                    <hr class="mt-0" />
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="satellite" id="satellite-streets-v12" checked />
-                                                <label class="form-check-label" for="satellite-streets-v12"> Satellite View </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="light" id="light-v11" />
-                                                <label class="form-check-label" for="light-v11"> Light </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="dark" id="dark-v11" />
-                                                <label class="form-check-label" for="dark-v11"> Dark </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="streets" id="streets-v12" />
-                                                <label class="form-check-label" for="streets-v12"> Street </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="rtoggle" value="outdoors" id="outdoors-v12" />
-                                                <label class="form-check-label" for="outdoors-v12"> Outdoor </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        </section>
+
+        <!-- Kolaborasi -->
+        <section id="collabs" class="mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="text-center mb-3">
+                            <h2 class="display-4 fw-bold text-color-navy mb-4">Bekerja Sama <span
+                                    class="text-color-red">Dengan</span></h2>
+                            <p>
+                                Rindang bekerjasama dengan berbagai pihak dari lembaga hingga <br />
+                                instansi pemerintah untuk kelancaran program Rindang kedepan
+                            </p>
+                        </div>
+                        <div class="row d-md-none justify-content-center align-items-center">
+                            <!-- Desktop -->
+                            <div class="col-4 mb-3">
+                                <img class="img-fluid p-2" src="src/img/logo/BI_Logo_Circle.svg" alt="" />
                             </div>
-                            <div class="col-6">
-                                <h3 class="text-color-navy fw-bold mb-4">Kalumpang</h3>
-                                <div class="accordion" id="accordionExample">
+                            <div class="col-4 mb-3">
+                                <img class="img-fluid" src="src/img/logo/Logo Ternate (1).png" alt="" />
+                            </div>
+                            <div class="col-4 mb-3">
+                                <img class="img-fluid" src="src/img/logo/Universitas-Khairun-Logo.png" alt="" />
+                            </div>
+                            <div class="col-4 mb-3">
+                                <img class="img-fluid" src="src/img/logo/RRI_Logo_2023.svg" alt="" />
+                            </div>
+                            <div class="col-4 mb-3">
+                                <img class="img-fluid" src="src/img/logo/TCS 1.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-none d-md-flex">
+                        <!-- Desktop -->
+                        <div class="col-12 mb-3 logos d-flex justify-content-evenly gap-5">
+                            <img class="img-fluid" src="src/img/logo/BI_Logo.png" alt="" />
+                            <img class="img-fluid" src="src/img/logo/Logo Ternate (1).png" alt="" />
+                            <img class="img-fluid" src="src/img/logo/Universitas-Khairun-Logo.png" alt="" />
+                            <img class="img-fluid" src="src/img/logo/RRI_Logo_2023.svg" alt="" />
+                            <img class="img-fluid" src="src/img/logo/TCS 1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="collabs" class="mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column">
+                        <div class="text-center mb-3">
+                            <h2 class="display-4 fw-bold text-color-navy mb-4">Pertanyaan Yang Sering <span
+                                    class="text-color-red">Ditanyakan</span></h2>
+                            <p>
+                                Anda dapat menemukan jawaban lengkap untuk pertanyaan-pertanyaan umum yang sering
+                                diajukan oleh pengguna. Ini adalah sumber informasi yang berguna untuk memahami
+                                topik atau layanan tertentu dengan lebih baik, mengatasi keraguan umum, dan memperoleh
+                                wawasan lebih lanjut. Jika Anda memiliki pertanyaan, kemungkinan besar Anda
+                                akan menemukan jawabannya di sini
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <!-- Desktop -->
+                            <div class="col-12 mb-3">
+                                <div class="accordion" id="accordionFlushExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Informasi Tahap 1.0</button>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <p class="mb-0">Apa itu <strong> RINDANG</strong>?</p>
+                                            </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body text-body-secondary">
+                                                RINDANG "Rica Tanam Dalam Kampong" merupakan program pemberdayaan
+                                                masyarakat yang berfokus pada produksi cabai, yang merupakan komoditas
+                                                penting
+                                                dalam memenuhi kebutuhan pangan di kota Ternate. Program ini bertujuan
+                                                untuk meningkatkan produktivitas dan kualitas produksi cabai di wilayah
+                                                desa
+                                                atau kelurahan-kelurahan yang ada di Kota Ternate.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Informasi Tahap 2.0</button>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Bagaimana Saya Dapat Bergabung dengan Program RINDANG?
+                                            </button>
                                         </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body text-body-secondary">
+                                                Anda dapat bergabung dengan Program RINDANG dengan menghubungi tim kami
+                                                melalui kontak yang telah disediakan di situs web kami. Kami selalu
+                                                membuka
+                                                peluang bagi warga setempat dan pihak yang tertarik untuk berpartisipasi
+                                                dalam program ini, baik sebagai petani cabai, relawan, atau mitra.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Informasi Tahap 3.0</button>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Apa Manfaat yang Diperoleh Masyarakat dari Program Ini?
+                                            </button>
                                         </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Produktivitas :<strong> 34kg/bulan</strong> <br />
-                                                Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body text-body-secondary">
+                                                Program RINDANG memberikan sejumlah manfaat kepada masyarakat kami. Ini
+                                                termasuk meningkatkan pendapatan para petani cabai, menciptakan lapangan
+                                                kerja lokal, meningkatkan akses ke cabai berkualitas, serta
+                                                berkontribusi pada pemenuhan kebutuhan pangan di wilayah kota kami.
+                                                Program ini juga
+                                                mendukung keberlanjutan lingkungan dan pertumbuhan ekonomi lokal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                Apakah Ada Pelatihan atau Dukungan yang Tersedia untuk Para Petani
+                                                Cabai?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body text-body-secondary">
+                                                Ya, Program RINDANG menyediakan pelatihan dan dukungan teknis kepada
+                                                para petani cabai yang berpartisipasi. Kami memiliki tim ahli yang akan
+                                                memberikan panduan dalam penanaman, perawatan, dan manajemen cabai. Kami
+                                                juga memberikan bantuan dalam memasarkan produk-produk cabai mereka.
                                             </div>
                                         </div>
                                     </div>
@@ -900,68 +846,236 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="collabs" class="mt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column">
+                        <div class="text-center mb-3">
+                            <h2 class="display-4 fw-bold text-color-navy mb-4">Hubungi <span
+                                    class="text-color-red">Kami</span></h2>
+
+                            <p>Kami siap menjawab pertanyaan Anda, menerima umpan balik, atau membantu Anda dengan
+                                segala kebutuhan yang Anda miliki terkait dengan layanan atau produk kami.</p>
+                            <p>
+                                Hubungi kami melalui formulir kontak yang telah kami sediakan atau melalui alamat email
+                                dan nomor telepon yang tercantum di bagian ini. Tim kami akan dengan senang
+                                hati memberikan bantuan dan informasi yang Anda butuhkan. Kami menghargai setiap
+                                pertanyaan dan masukan yang Anda sampaikan, dan kami berusaha untuk memberikan
+                                respon yang cepat dan informatif.
+                            </p>
+                        </div>
+
+                        <div class="row fw-bold">
+                            <!-- Desktop -->
+                            <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
+                                <span><i class="fa fa-map-marker-alt me-3"></i>Creative Space X, Benteng Oranje, Ternate
+                                    Tengah</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
+                                <span><i class="fa fa-envelope me-3"></i>ternatecreativespace@gmail.com</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
+                                <span><i class="fa fa-phone me-3"></i>+62 812-4403-6006</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+    <footer class="text-center text-body-secondary pb-4 small">Copyright © <span class="fw-bold">By Rindang 2023</span>
+        - All Rights Reserved</footer>
+
+    <!-- Modals -->
+    <!-- todo ================ Kalumpang -->
+    <div class="modal fade" id="kalumpang" tabindex="-1" aria-labelledby="kalumpangLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="kalumpangLabel">Detail Kelurahan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="map" class="rounded-4 mb-4"></div>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-color-navy fw-bold mb-4">Kalumpang</h3>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Informasi Tahap 1.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Informasi Tahap 2.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Informasi Tahap 3.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- todo================ Kalumpang -->
+    <div class="modal fade" id="sasa" tabindex="-1" aria-labelledby="sasaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sasaLabel">Detail Kelurahan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div id="map2" class="rounded-4 mb-4"></div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h3 class="text-color-navy fw-bold mb-4">Sasa</h3>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Informasi Tahap 1.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Informasi Tahap 2.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Informasi Tahap 3.0
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-body-secondary">
+                                            Produktivitas :<strong> 34kg/bulan</strong> <br />
+                                            Jumlah Hasil Panen :<strong> 40kg/bulan</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <script>
-            feather.replace();
-        </script>
-        <script>
-            // Get the element that you want to add the class to
-            const navbar = document.querySelector(".navbar");
-            const input_group = document.querySelector(".input-group");
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        // Get the element that you want to add the class to
+        const navbar = document.querySelector(".navbar");
+        const input_group = document.querySelector(".input-group");
 
-            // Get the window width
-            const windowWidth = window.innerWidth;
+        // Get the window width
+        const windowWidth = window.innerWidth;
 
-            // Check if the window width is less than or equal to 768px
-            if (windowWidth <= 768) {
-                // Add the class to the navbar
-                // navbar.classList.add("navbar");
-                navbar.classList.add("bg-body");
-                navbar.classList.remove("navbar-dark");
-                input_group.classList.add("border");
-            }
-        </script>
-        <script>
-            const body = document.querySelector("body");
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        // Set the opacity to 1
-                        entry.target.style.opacity = 1;
-                    }
-                });
+        // Check if the window width is less than or equal to 768px
+        if (windowWidth <= 768) {
+            // Add the class to the navbar
+            // navbar.classList.add("navbar");
+            navbar.classList.add("bg-body");
+            navbar.classList.remove("navbar-dark");
+            input_group.classList.add("border");
+        }
+    </script>
+    <script>
+        const body = document.querySelector("body");
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Set the opacity to 1
+                    entry.target.style.opacity = 1;
+                }
             });
+        });
 
-            observer.observe(body);
-        </script>
-        <script>
-            const counters = document.querySelectorAll(".value");
-            const speed = 500;
+        observer.observe(body);
+    </script>
+    <script src="src/js/number-counter.js"></script>
+    <script src="src/js/village-maps.js"></script>
+</body>
 
-            counters.forEach((counter) => {
-                const animate = () => {
-                    const value = +counter.getAttribute("akhi");
-                    const data = +counter.innerText;
-                    const formatted = value.toLocaleString("de-DE");
-
-                    const time = formatted / speed;
-                    if (data < formatted) {
-                        counter.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 1);
-                    } else {
-                        counter.innerText = formatted;
-                    }
-                };
-
-                animate();
-            });
-        </script>
-        <script src="src/js/village-maps.js"></script>
-    </body>
 </html>

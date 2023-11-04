@@ -143,7 +143,7 @@ button:focus {
 }
 
 .logos img {
-    width: 100%;
+    width: auto;
     height: 80px;
 }
 
@@ -210,6 +210,25 @@ button:focus {
 
     .v-card-title {
         color: white;
+    }
+
+    .user-testi {
+        transition: all ease-in-out 0.1s;
+        background-color: var(--color-2) !important;
+        color: white !important;
+    }
+
+    .user-testi,
+    .user-testi small {
+        color: white;
+    }
+
+    .user-testi small {
+        opacity: 0.6;
+    }
+
+    .logos {
+        height: 80px;
     }
 }
 
@@ -278,6 +297,10 @@ button:focus {
         background-size: cover;
         background-position: center center;
         border-radius: 1rem;
+    }
+
+    .galery {
+        height: 500px;
     }
 
     .pict1 {
