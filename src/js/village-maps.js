@@ -10,6 +10,16 @@ const map1 = new mapboxgl.Map({
 
 const kalumpang = new mapboxgl.Marker().setLngLat([127.380995, 0.78964]).addTo(map1);
 
+const layerList1 = document.getElementById("menu1");
+const inputs1 = layerList1.getElementsByTagName("input");
+
+for (const input of inputs1) {
+    input.onclick = (layer) => {
+        const layerId = layer.target.id;
+        map1.setStyle("mapbox://styles/mapbox/" + layerId);
+    };
+}
+
 // Add zoom and rotation controls to the map.
 map1.addControl(new mapboxgl.NavigationControl());
 
