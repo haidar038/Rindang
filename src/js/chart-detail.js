@@ -14,10 +14,27 @@
             labels: data.map((row) => row.bulan),
             datasets: [
                 {
-                    label: "Rekap Produktivitas Tahap 1.0",
+                    label: "Hasil Panen Bulanan",
                     data: data.map((row) => row.count),
                 },
             ],
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: "Bulan",
+                    },
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: "Kebutuhan/ton",
+                    },
+                },
+            },
         },
     });
 
