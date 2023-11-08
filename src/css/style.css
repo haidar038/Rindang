@@ -144,7 +144,7 @@ button:focus {
 
 .logos img {
     width: auto;
-    height: 80px;
+    height: 60px;
 }
 
 #map1,
@@ -169,7 +169,7 @@ button:focus {
     }
 
     .hero-headline {
-        transform: translate(0, 4rem);
+        transform: translate(0, 3.5rem);
     }
 
     .headline {
@@ -183,22 +183,6 @@ button:focus {
 
     .stat-card {
         margin-bottom: 1rem;
-    }
-
-    .tagline-1,
-    .tagline-2 {
-        position: absolute;
-        height: 3.5rem;
-    }
-
-    .tagline-1 {
-        left: 2rem;
-        bottom: 6rem;
-    }
-
-    .tagline-2 {
-        right: 2rem;
-        bottom: 10rem;
     }
 
     .village-card {
@@ -238,7 +222,7 @@ button:focus {
     }
 
     .hero-headline {
-        transform: translate(0, 6rem);
+        transform: translate(0, 4rem);
     }
 
     .rindang-stat {
@@ -247,22 +231,6 @@ button:focus {
 
     .mobile-headline {
         display: none;
-    }
-
-    .tagline-1,
-    .tagline-2 {
-        position: absolute;
-        height: 5rem;
-    }
-
-    .tagline-1 {
-        right: 15rem;
-        top: 22rem;
-    }
-
-    .tagline-2 {
-        right: 8rem;
-        top: 16rem;
     }
 
     .village-card {
