@@ -11,13 +11,13 @@ const map1 = new mapboxgl.Map({
 const kalumpang = new mapboxgl.Marker().setLngLat([127.380995, 0.78964]).addTo(map1);
 
 const layerList1 = document.getElementById("menu1");
-const inputs1 = layerList1.getElementsByTagName("input");
+const inputs1 = document.getElementsByTagName("input");
 
 for (const input of inputs1) {
-    input.onclick = (layer) => {
-        const layerId = layer.target.id;
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
         map1.setStyle("mapbox://styles/mapbox/" + layerId);
-    };
+    });
 }
 
 // Add zoom and rotation controls to the map.
@@ -37,6 +37,16 @@ const map2 = new mapboxgl.Map({
 
 const sasa = new mapboxgl.Marker().setLngLat([127.32647282192244, 0.7553337759907618]).addTo(map2);
 
+const layerList2 = document.getElementById("menu2");
+const inputs2 = document.getElementsByTagName("input");
+
+for (const input of inputs2) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map2.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
+
 // Add zoom and rotation controls to the map.
 map2.addControl(new mapboxgl.NavigationControl());
 
@@ -53,6 +63,16 @@ const map3 = new mapboxgl.Map({
 });
 
 const fora = new mapboxgl.Marker().setLngLat([127.31852, 0.771626]).addTo(map3);
+
+const layerList3 = document.getElementById("menu3");
+const inputs3 = document.getElementsByTagName("input");
+
+for (const input of inputs3) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map3.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
 
 // Add zoom and rotation controls to the map.
 map3.addControl(new mapboxgl.NavigationControl());
@@ -71,6 +91,16 @@ const map4 = new mapboxgl.Map({
 
 const tubo = new mapboxgl.Marker().setLngLat([127.3745, 0.826587]).addTo(map4);
 
+const layerList4 = document.getElementById("menu4");
+const inputs4 = document.getElementsByTagName("input");
+
+for (const input of inputs4) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map4.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
+
 // Add zoom and rotation controls to the map.
 map4.addControl(new mapboxgl.NavigationControl());
 
@@ -87,6 +117,16 @@ const map5 = new mapboxgl.Map({
 });
 
 const kulaba = new mapboxgl.Marker().setLngLat([127.360327, 0.844671]).addTo(map5);
+
+const layerList5 = document.getElementById("menu5");
+const inputs5 = document.getElementsByTagName("input");
+
+for (const input of inputs5) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map5.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
 
 // Add zoom and rotation controls to the map.
 map5.addControl(new mapboxgl.NavigationControl());
@@ -105,6 +145,16 @@ const map6 = new mapboxgl.Map({
 
 const santiong = new mapboxgl.Marker().setLngLat([127.381898, 0.790484]).addTo(map6);
 
+const layerList6 = document.getElementById("menu6");
+const inputs6 = document.getElementsByTagName("input");
+
+for (const input of inputs6) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map6.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
+
 // Add zoom and rotation controls to the map.
 map6.addControl(new mapboxgl.NavigationControl());
 
@@ -121,6 +171,16 @@ const map7 = new mapboxgl.Map({
 });
 
 const fitu = new mapboxgl.Marker().setLngLat([127.341717, 0.762043]).addTo(map7);
+
+const layerList7 = document.getElementById("menu7");
+const inputs7 = document.getElementsByTagName("input");
+
+for (const input of inputs7) {
+    input.addEventListener("click", (layer) => {
+        const layerId = layer.target.dataset.type;
+        map7.setStyle("mapbox://styles/mapbox/" + layerId);
+    });
+}
 
 // Add zoom and rotation controls to the map.
 map7.addControl(new mapboxgl.NavigationControl());
