@@ -32,7 +32,7 @@ body::before {
     height: 100%;
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
-    background-position: center -4rem;
+    background-position: right top;
     background-size: cover;
     opacity: 1; /* Sesuaikan dengan tingkat opacity yang Anda inginkan */
     z-index: -1; /* Letakkan pseudo-element di bawah elemen-elemen lain di body */
