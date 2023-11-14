@@ -16,7 +16,6 @@
 
 html {
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -172,21 +171,18 @@ button:focus {
     }
 
     .hero-section .hero-img {
+        width: auto;
         height: 55%;
         position: absolute;
-        bottom: 0%;
+        bottom: 0;
         left: 50%;
-    }
-
-    .hero-img img {
-        position: relative;
-        left: -50%;
+        transform: translate(-50%, 0);
     }
 
     .small-icons {
         height: 10%;
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, -20rem);
