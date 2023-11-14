@@ -171,7 +171,6 @@ button:focus {
     }
 
     .hero-section .hero-img {
-        width: auto;
         height: 55%;
         position: absolute;
         bottom: 0;
