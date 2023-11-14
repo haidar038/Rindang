@@ -173,9 +173,13 @@ button:focus {
     .hero-section .hero-img {
         height: 55%;
         position: absolute;
-        bottom: 0;
+        bottom: 0%;
         left: 50%;
-        transform: translate(-50%, 0);
+    }
+
+    .hero-img img {
+        position: relative;
+        left: -50%;
     }
 
     .small-icons {
