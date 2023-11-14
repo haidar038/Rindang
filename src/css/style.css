@@ -163,6 +163,8 @@ button:focus {
     body::before {
         background-image: url("../img/chillies.png");
         background-position: center top;
+        image-rendering: optimizeSpeed;
+        content-visibility: auto;
     }
 
     .img-galery {
