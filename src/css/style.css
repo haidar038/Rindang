@@ -32,7 +32,7 @@ body::before {
     height: 100%;
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right -5rem;
     background-size: cover;
     opacity: 1; /* Sesuaikan dengan tingkat opacity yang Anda inginkan */
     z-index: -1; /* Letakkan pseudo-element di bawah elemen-elemen lain di body */
@@ -86,6 +86,7 @@ button:focus {
     border: none;
     border-radius: 0.5rem;
     transition: all ease-in-out 0.2s;
+    justify-content: center;
 }
 
 .hero-section .btn-1 {
@@ -160,7 +161,56 @@ button:focus {
 /** ==================== Small Viewport ==================== */
 @media screen and (max-width: 767.9px) {
     body::before {
-        background-position: -22rem center;
+        background-image: url("../img/chillies.png");
+        background-position: center top;
+    }
+
+    .img-galery {
+        aspect-ratio: 1/1;
+        image-rendering: optimizeSpeed;
+    }
+
+    .hero-section .hero-img {
+        width: auto;
+        height: 55%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .small-icons {
+        height: 10%;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -20rem);
+        border-radius: 50%;
+    }
+
+    #onion {
+        animation: glowing 2000ms infinite alternate both;
+        transform: translate(7rem, -10rem);
+    }
+
+    #chili {
+        animation: glowing 3000ms infinite alternate both;
+        transform: translate(5rem, -16rem);
+    }
+
+    #tomato {
+        animation: glowing 2500ms infinite alternate both;
+        transform: translate(-11rem, -10rem);
+    }
+
+    #pepper {
+        animation: glowing 1500ms infinite alternate both;
+        transform: translate(-9rem, -16rem);
+    }
+
+    .btn-1 {
+        width: 100% !important;
     }
 
     .hero-bg {
@@ -169,7 +219,12 @@ button:focus {
     }
 
     .hero-headline {
-        transform: translate(0, 3.5rem);
+        text-align: center;
+        transform: translate(0, 2rem);
+    }
+
+    .hero-headline .btn-1 {
+        width: 100%;
     }
 
     .headline {
@@ -217,8 +272,16 @@ button:focus {
 
 /** ==================== Large Viewport ==================== */
 @media screen and (min-width: 768px) {
+    .small-icons {
+        display: none;
+    }
+
     .navbar-padding {
         padding: 1.5rem 0 !important;
+    }
+
+    .hero-section img {
+        display: none;
     }
 
     .hero-headline {
@@ -284,5 +347,19 @@ button:focus {
     }
     .pict5 {
         background-image: url("../img/galery/pict2.jpg");
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0 #fff;
+    }
+
+    50% {
+        box-shadow: 0px 0px 8px #fff;
+    }
+
+    100% {
+        box-shadow: 0 0 0 #fff;
     }
 }
