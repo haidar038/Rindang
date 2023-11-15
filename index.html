@@ -72,13 +72,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 column-gap-lg-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                                    <a class="nav-link active" aria-current="page" href="#hero-section">Beranda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Tentang</a>
+                                    <a class="nav-link" href="#about">Tentang</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Galeri</a>
+                                    <a class="nav-link" href="#galery">Galeri</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Galeri </a>
@@ -90,7 +90,7 @@
                                     </ul>
                                 </li> -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Kontak</a>
+                                    <a class="nav-link" href="#contact">Kontak</a>
                                 </li>
                             </ul>
                             <!-- <form class="d-flex" role="search">
@@ -106,12 +106,12 @@
                 </div>
             </nav>
 
-            <section class="hero-section">
+            <section class="hero-section" id="hero-section">
                 <img class="hero-img" src="src/img/hero.png" alt="Hero" loading="lazy" decoding="async" fetchpriority="high" role="presentation" />
-                <img class="small-icons" id="chili" src="src/img/icons/chili.png" alt="" />
+                <!-- <img class="small-icons" id="chili" src="src/img/icons/chili.png" alt="" />
                 <img class="small-icons" id="onion" src="src/img/icons/onion.png" alt="" />
                 <img class="small-icons" id="pepper" src="src/img/icons/pepper.png" alt="" />
-                <img class="small-icons" id="tomato" src="src/img/icons/tomato.png" alt="" />
+                <img class="small-icons" id="tomato" src="src/img/icons/tomato.png" alt="" /> -->
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="col-12 text-light h-100 hero-headline lh-sm">
@@ -195,7 +195,7 @@
                                 </p>
                             </div>
                             <!-- Carousel -->
-                            <!-- <div id="carouselExample" class="carousel slide d-md-none shadow">
+                            <div id="carouselExample" class="carousel slide d-md-none shadow">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -282,151 +282,130 @@
                                     <span class="carousel-control-next-icon" ariahidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
-                            </div> -->
+                            </div>
                             <!-- Non Carousel -->
-                            <!-- <div class="row d-none d-md-flex justify-content-center">
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+                            <div class="row d-none d-md-flex justify-content-center">
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Kalumpang</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
 
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#kalumpang">Detail</a></li>
-                                                </ul>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#kalumpang">Detail</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Sasa</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#sasa">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#fora">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Tubo</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#tubo">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#kulaba">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Santiong</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#santiong">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3 mb-3">
+                                    <div class="card village-card border-0 shadow">
+                                        <div class="card-body card-elements">
+                                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                                <span class="text-color-navy fw-bold fs-3 v-card-title">Fitu</span>
+                                                <div class="dropdown">
+                                                    <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#fitu">Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis ullam quia laborum dolore!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Sasa</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#sasa">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Foramadiahi</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#fora">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Tubo</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#tubo">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Kulaba</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#kulaba">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Santiong</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#santiong">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 mb-3">
-                                <div class="card village-card border-0 shadow">
-                                    <div class="card-body card-elements">
-                                        <div class="d-flex justify-content-between mb-3 align-items-center">
-                                            <span class="text-color-navy fw-bold fs-3 v-card-title">Fitu</span>
-                                            <div class="dropdown">
-                                                <a class="btn btn-lg" href="#" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false"> <i class="fa fa-ellipsis-v"></i> </a>
-
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#fitu">Detail</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aut nobis
-                                            ullam quia laborum dolore!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                            <div class="card">
+                            <!-- <div class="card">
                                 <div class="card-body">
                                     <table class="table table-responsive table-striped">
                                         <thead>
@@ -538,7 +517,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -823,7 +802,7 @@
             </section>
 
             <!-- FAQ -->
-            <section id="collabs" class="mt-5 py-5">
+            <section id="faq" class="mt-5 py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex flex-column">
@@ -836,18 +815,17 @@
                             </div>
 
                             <div class="row">
-                                <!-- Desktop -->
                                 <div class="col-12 mb-3">
                                     <div class="accordion" id="accordionFlushExample">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
                                                     <p class="mb-0">Apa itu <strong> RINDANG</strong>?</p>
                                                 </button>
                                             </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body text-body-secondary">
-                                                    RINDANG "Rica Tanam Dalam Kampong" merupakan program pemberdayaan masyarakat yang berfokus pada produksi cabai, yang merupakan komoditas penting dalam memenuhi kebutuhan pangan di kota
+                                                    RINDANG "Rica Tanam Dalam Kampung" merupakan program pemberdayaan masyarakat yang berfokus pada produksi cabai, yang merupakan komoditas penting dalam memenuhi kebutuhan pangan di kota
                                                     Ternate. Program ini bertujuan untuk meningkatkan produktivitas dan kualitas produksi cabai di wilayah desa atau kelurahan-kelurahan yang ada di Kota Ternate.
                                                 </div>
                                             </div>
@@ -900,7 +878,7 @@
             </section>
 
             <!-- Footer -->
-            <section id="collabs" class="mt-5 pb-5">
+            <section id="contact" class="mt-5 pb-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex flex-column">
@@ -915,15 +893,21 @@
                             </div>
 
                             <div class="row fw-bold">
-                                <!-- Desktop -->
-                                <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
-                                    <span><i class="fa fa-map-marker-alt me-3"></i>Creative Space X, Benteng Oranje, Ternate Tengah</span>
-                                </div>
-                                <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
-                                    <span><i class="fa fa-envelope me-3"></i>ternatecreativespace@gmail.com</span>
-                                </div>
-                                <div class="col-md-12 col-sm-12 text-md-center text-sm-start">
-                                    <span><i class="fa fa-phone me-3"></i>+62 812-4403-6006</span>
+                                <div class="col-12">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa fa-map-marker-alt me-3"></i></td>
+                                            <td>Creative Space X, Fort Oranje, Ternate Tengah</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope me-3"></i></td>
+                                            <td>ternatecreativespace@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone me-3"></i></td>
+                                            <td>+62 812-4403-6006</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -931,7 +915,7 @@
                 </div>
             </section>
         </main>
-        <footer class="text-center text-body-secondary pb-4 small">Copyright © <span class="fw-bold">By Rindang 2023</span> - All Rights Reserved</footer>
+        <footer class="text-center text-body-secondary pb-4 small">Copyright © <span class="fw-bold">By Ternate Creative Space 2023</span> - All Rights Reserved</footer>
 
         <!-- ! Modals -->
         <!-- todo ================ Kalumpang -->
@@ -1519,16 +1503,16 @@
             observer.observe(body);
         </script>
         <script>
-            gsap.from(".navbar", { duration: 0.5, opacity: 0 });
-            gsap.from(".hero-section", { duration: 0.5, opacity: 0, y: 200 });
-            gsap.from(".tagline-1", { duration: 0.5, opacity: 0, y: 200 });
-            gsap.from(".tagline-2", { duration: 0.5, opacity: 0, y: 200 });
+            gsap.from(".navbar", { duration: 0.5, autoAlpha: 0 });
+            gsap.from(".hero-section", { duration: 0.5, autoAlpha: 0, y: 200 });
+            gsap.from(".tagline-1", { duration: 0.5, autoAlpha: 0, y: 200 });
+            gsap.from(".tagline-2", { duration: 0.5, autoAlpha: 0, y: 200 });
 
-            gsap.from(".hero-img", { duration: 0.8, opacity: 0, scale: 0.2 });
-            gsap.from("#tomato", { rotation: 360, duration: 1, opacity: 0, y: 50, x: 50 });
-            gsap.from("#pepper", { rotation: 360, duration: 1.2, opacity: 0, y: 50, x: 50 });
-            gsap.from("#chili", { rotation: 360, duration: 1.4, opacity: 0, y: 50, x: -50 });
-            gsap.from("#onion", { rotation: 360, duration: 1.6, opacity: 0, y: 50, x: -50 });
+            gsap.from(".hero-img", { duration: 0.8, autoAlpha: 0, scale: 0.2 });
+            gsap.from("#tomato", { rotation: 360, duration: 1, autoAlpha: 0, y: 50, x: 50 });
+            gsap.from("#pepper", { rotation: 360, duration: 1.2, autoAlpha: 0, y: 50, x: 50 });
+            gsap.from("#chili", { rotation: 360, duration: 1.4, autoAlpha: 0, y: 50, x: -50 });
+            gsap.from("#onion", { rotation: 360, duration: 1.6, autoAlpha: 0, y: 50, x: -50 });
         </script>
         <script src="src/js/number-counter.js"></script>
         <script src="src/js/village-maps.js"></script>
