@@ -60,6 +60,14 @@ button:focus {
     top: 0;
 }
 
+.about-pict {
+    background-image: url("../img/about-pict.jpg");
+    background-repeat: no-repeat;
+    background-position: center -12rem;
+    border-radius: 2rem;
+    height: 28rem;
+}
+
 .search-form {
     padding: 3px;
 }
@@ -165,6 +173,12 @@ button:focus {
         background-position: center top;
         image-rendering: optimizeSpeed;
         content-visibility: auto;
+    }
+
+    .about-pict {
+        height: 16rem;
+        background-size: cover;
+        background-position: center 0;
     }
 
     .img-galery {
@@ -336,7 +350,7 @@ button:focus {
     }
 
     .pict1 {
-        background-image: url("../img/galery/pict1.jpg");
+        background-image: url("../img/galery/chilliiiieee.jpg");
     }
     .pict2 {
         background-image: url("../img/galery/pict5.jpg");
